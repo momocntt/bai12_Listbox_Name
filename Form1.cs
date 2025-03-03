@@ -16,9 +16,12 @@ namespace bai12_Listbox_Name
         {
             InitializeComponent();
         }
-
+        List<string> ten = new List<string>();
         private void btnAdd_Click(object sender, EventArgs e)
         {
+
+            List<string> ten = new List<string>();
+            ten.Add(txtName.Text);
             lstName.Items.Add(txtName.Text);
             txtName.Text = "";
             txtName.Focus();
@@ -75,5 +78,13 @@ namespace bai12_Listbox_Name
                 lstName.Items.Insert(lstName.SelectedIndex, txtName.Text);
             }
         }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            foreach (string t in ten) 
+            {
+                lstName.Items.Add(t);
+            }
+        }
     }
-}
+} 

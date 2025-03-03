@@ -35,6 +35,8 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
             this.txtSelect = new System.Windows.Forms.TextBox();
+            this.btnList = new System.Windows.Forms.Button();
+            this.btnListbox = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtName
@@ -101,11 +103,32 @@
             this.txtSelect.TabIndex = 0;
             this.txtSelect.Text = "2";
             // 
+            // btnList
+            // 
+            this.btnList.Location = new System.Drawing.Point(460, 76);
+            this.btnList.Name = "btnList";
+            this.btnList.Size = new System.Drawing.Size(110, 26);
+            this.btnList.TabIndex = 4;
+            this.btnList.Text = "Thêm vào list";
+            this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
+            // 
+            // btnListbox
+            // 
+            this.btnListbox.Location = new System.Drawing.Point(460, 177);
+            this.btnListbox.Name = "btnListbox";
+            this.btnListbox.Size = new System.Drawing.Size(110, 26);
+            this.btnListbox.TabIndex = 4;
+            this.btnListbox.Text = "Thêm vào listbox";
+            this.btnListbox.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(478, 450);
+            this.ClientSize = new System.Drawing.Size(793, 494);
+            this.Controls.Add(this.btnListbox);
+            this.Controls.Add(this.btnList);
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.lstName);
             this.Controls.Add(this.btnRemove);
@@ -130,6 +153,8 @@
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.TextBox txtSelect;
+        private System.Windows.Forms.Button btnList;
+        private System.Windows.Forms.Button btnListbox;
     }
 }
 
